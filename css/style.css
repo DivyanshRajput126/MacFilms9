@@ -1,0 +1,591 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1f1f1;
+}
+/* css for website starts here */
+/* preloader starts here */
+.preloader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.preloader img{
+    width: 90px;
+    height: 80px;
+}
+/* pre loader ends here */
+
+/* main content starts here */
+/* navigation bar starts here */
+.navbar{
+    /* background: #2e2e2e; */
+    position: absolute;
+    z-index: 1000;
+}
+
+.navbar-brand img{
+    width: 120px;
+    height: 80px;
+}
+.navbar-brand{
+    font-size: 35px;
+    padding: 15px;
+    color: #FFFFFF;
+}
+.navbar-brand:hover{
+    color: #353535ce;
+    transition: .8s;
+}
+.navbar-nav{
+    margin-left: 35%;
+}
+.nav-item a{
+    font-size: 20px;
+    padding: 0px 15px;
+    color: #FFFFFF;
+    margin: 0 15px;
+}
+.nav-item a:hover{
+    color: #FFFFFF;
+}
+.active{
+    color: #FFFFFF;
+}
+.navbar-toggler span{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu{
+    margin: 0;
+    padding: 0;
+}
+.dropdown-menu li a{
+    margin:10px 0;
+    padding: 0 10px;
+    color: black;
+}
+.dropdown-menu li a:hover{
+    color: black;
+}
+@keyframes down{
+    from{
+        margin-top:-100% ;
+    }to{
+        margin-top: 0;
+    }
+}
+.navbar-scrolled{
+    background-color: #202020;
+    color: #FFFFFF;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    animation: down 1s;
+}
+/* navigation bar ends here */
+
+/* carousel starts here */
+@keyframes bounceInTop{
+    from{
+        margin-top: -100%;
+    }to{
+        margin-top:-30%;
+    }
+}
+.carousel-caption h5{
+    font-size: 35px;
+    margin-top: -30%;
+    animation: bounceInTop 1s;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'IBM Plex Serif', serif;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+/* carousel ends here */
+
+/* first section starts here */
+.first{
+    height: 100%;
+    width: 100%;
+    /* background-color: #f1f1f1; */
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.first-text{
+    width: 40%;
+    font-size: 30px;
+    align-items: center;
+    margin-right: 50px;
+    font-family: 'Taviraj', serif;
+    /* font-family: 'Raleway', sans-serif; */
+    color: black;
+}
+.first-image{
+    width: 35%;
+    margin-left: 50px;
+    height: 65vh;
+}
+.first-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+/* first section ends here */
+
+/* second section starts here */
+.second{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.second::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    border-radius: 6px;
+    z-index: -1;
+}
+.second-text{
+    font-size: 30px;
+    font-family: 'Taviraj', serif;
+    padding: 50px;
+    color: white;
+}
+/* second section ends here */
+
+/* third section starts here */
+.third{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+.third-video{
+    width: 100%;
+}
+.third-video video{
+    width: 100%;
+    height: 100%;
+}
+.third-text{
+    margin-left: 60%;
+    font-size: 25px;
+    width: 550px;
+    text-align: end;
+    font-family: 'Taviraj', serif;
+    padding: 50px;
+    color: black;
+}
+/* third section ends here */
+
+/* fourth section starts here */
+.fourth{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.fourth::before{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    opacity: 0.89;
+    width: 100%;
+    height: 100%;
+}
+.fourth-text{
+    font-size: 30px;
+    width: 40%;
+    font-family: 'Taviraj', serif;
+    padding: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+/* fourth section ends here */
+
+/* fifth(Gallery) section starts here */
+.fifth{
+    margin-top: 2%;
+}
+.fifth .containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.fifth  h1 {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px auto;
+    width: 450px;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 10px double #202020;
+}
+
+.fifth .containers img {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    border: 10px solid #fefae0;
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    transition-duration: 1s;
+}
+
+.fifth .containers img:hover {
+    border: 5px solid #fff;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: none;
+    filter: none;
+}
+
+/* fifth(Gallery) section ends here */
+
+/* sixth section starts here */
+.sixth{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.sixth::before{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    opacity: 0.89;
+    width: 100%;
+    height: 100%;
+}
+/* sixth section ends here */
+/* main cotent ends here */
+
+/* about us page starts here */
+.wrapper{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper::before{
+    width: 100%;
+    height: 50vh;
+    content: "";
+    z-index: -1;
+    position: absolute;
+}
+.wrapper h2{
+    color: white;
+}
+.about{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.about-image{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 50%;
+    height: 90vh;
+    margin-bottom: 20px;
+}
+.about-image img{
+    width: 100%;
+    height: 100%;
+}
+.about-text{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Prata', serif;
+    width: 50%;
+    height: 100%;
+    font-size: 22px;
+    padding: 50px;
+}
+/* about us page ends here */
+
+/* contact section starts here */
+.wrapper1{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper1::before{
+    width: 100%;
+    height: 50vh;
+    content: "";
+    z-index: -1;
+    opacity: 0.89;
+    position: absolute;
+}
+.wrapper1 h2{
+    color: white;
+}
+
+/* contact section starts here */
+/* Contact Section */
+#contact{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+form input, form textarea , form select{
+    border: 0px;
+    margin: 10px 0px;
+    padding: 20px;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid black;
+}
+form button{
+    padding: 10px;
+    background: red;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline:none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    font-family: 'Cormorant Garamond', serif;
+}
+form button:hover{
+    background-color: black;
+    color: white;
+}
+
+/* contact section ends here */
+
+
+/* footer section starts here */
+.site-footer {
+    background-color: black;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.site-footer hr {
+    border-top-color: white;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+#map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#map {
+    width: 90%;
+    height: 100%;
+    border: 2px solid white;
+}
+
+.site-footer a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+}
+
+.copyright-text {
+    margin: 0
+}
+
+
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.whatsapp:hover {
+    background-color: #25d366
+}
+
+.social-icons a.instagram:hover {
+    background-color: #e319bed4
+}
+
+
+#map i {
+    width: 300px;
+}
+
+
+/* footer section ends here */
+
+/* floating whatsapp button is here */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.float:hover{
+    border: 2px solid  #25d366;
+    color: #25d366;
+    background-color: white;
+}
+
+.my-float{
+	margin-top:16px;
+}
+

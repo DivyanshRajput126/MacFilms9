@@ -1,0 +1,356 @@
+@media(max-width:1440px){
+    .navbar-nav{
+        margin-left: 25%;
+    }
+}
+@media(max-width:1290px){
+    
+    .nav-item a{
+        padding: 0px 5px;
+        margin: 0px 5px;
+    }
+}
+@media(max-width:1160px){
+    .navbar-nav{
+        margin-left: 16%;
+    }
+    .nav-item a{
+        margin: 0px 3px;
+    }
+}
+@media(max-width:1050px){
+    .navbar-nav{
+        margin-left: 14%;
+    }
+    .nav-item a{
+        font-size: 18px;
+    }
+}
+@media(max-width:990px){
+    .navbar-nav{
+        margin-left: 2%;
+    }
+    .nav-item a{
+        background-color: white;
+        color: black;
+    }
+    .navbar-scrolled .nav-item a{
+        color: white;
+        background-color:#202020;
+    }
+}
+@media(max-width: 580px){
+    .navbar-brand{
+        font-size: 25px;
+    }
+}
+@media(max-width:500px){
+    .navbar-brand img{
+        width: 70px;
+        height: 50px;
+    }
+}
+@media(max-width:317px){
+    .navbar-brand{
+        padding: 0px;
+    }
+}
+
+/* carousel starts here */
+@media(max-width:990px){
+    .carousel-caption h5{
+        font-size: 25px;
+    }
+}
+@media(max-width:768px){
+    .carousel{
+        height: 65vh;
+        border: 2px solid black;
+    }
+    .carousel img{
+        height: 65vh;
+    }
+    .carousel-caption h5{
+        font-size: 18px;
+        margin-top: 10%;
+    }
+}
+@media(max-width:440px){
+    .carousel-caption h5{
+        font-size: 15px;
+    }
+}
+@media(max-width:330px){
+    .carousel-caption h5{
+        font-size: 13px;
+    }
+}
+/* carousel ends here */
+
+/* first section starts here */
+@media(max-width:1020px){
+    .first-text{
+        font-size: 25px;
+    }
+}
+@media(max-width:890px){
+    .first-image{
+        width: 40% ;
+        height: 70vh;
+    }
+}
+@media(max-width:730px){
+    .first-text{
+        margin-right: 20px;
+        font-size: 23px;
+    }
+    .first-image{
+        width: 45%;
+    }
+}
+@media(max-width:600px){
+    .first{
+        flex-direction: column;
+    }
+    .first-text{
+        width: 100%;
+        padding: 30px;
+    }
+    .first-image{
+        width: 85%;
+        margin-left: 0px;
+    }
+}
+@media(max-width:500px){
+    .first-text{
+        font-size: 20px;
+    }
+}
+@media(max-width:360px){
+    .first-image{
+        width: 90%;
+        height: 60vh;
+    }
+}
+@media(max-width:330px){
+    .first-text{
+        font-size: 18px;
+    }
+}
+/* first section ends here */
+
+/* second section starts here */
+@media(max-width:1150px){
+    .second-text{
+        font-size: 28px;
+    }
+}
+@media(max-width:990px){
+    .second-text{
+        font-size: 25px;
+    }
+}
+@media(max-width:730px){
+    .second-text{
+        font-size: 23px;
+    }
+}
+@media(max-width:600px){
+    .second-text{
+        font-size: 20px;
+    }
+}
+@media(max-width:450px){
+    .second-text{
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+@media(max-width:350px){
+    .second-text{
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+/* second section ends here */
+
+/* third section starts here */
+@media(max-width:1375px){
+    .third-text{
+        margin-left: 55%;
+    }
+}
+@media(max-width:1225px){
+    .third-text{
+        margin-left: 50%;
+        font-size: 25px;
+    }
+}
+@media(max-width:1100px){
+    .third-text{
+        width: 450px;
+        margin-left: 55%;
+    }
+}
+@media(max-width:1010px){
+    .third-text{
+        font-size: 23px;
+        margin-left: 50%;
+    }
+}
+@media(max-width:910px){
+    .third-text{
+        margin-left: 45%;
+    }
+}
+@media(max-width:825px){
+    .third-text{
+        margin-left: 40%;
+    }
+}
+@media(max-width:750px){
+    .third-text{
+        width: 80%;
+        margin-left: 20%;
+        font-size: 20px;
+    }
+}
+@media(max-width:540px){
+    .third-text{
+        width: 85%;
+        margin-left: 15%;
+        font-size: 18px;
+    }
+}
+@media(max-width:480px){
+    .third-text{
+        width: 90%;
+        margin-left: 10%;
+        font-size: 15px;
+    }
+}
+
+/* third section ends here */
+
+/* fourth section starts here */
+@media(max-width:1200px){
+    .fourth-text{
+        font-size: 28px;
+        width: 45%;
+    }
+}
+@media(max-width:890px){
+    .fourth-text{
+        font-size: 25px;
+    }
+}
+@media(max-width:750px){
+    .fourth{
+        justify-content: end;
+        /* align-items: end; */
+    }
+    .fourth-text{
+        margin-right: 30px;
+    }
+}
+@media(max-width:600px){
+    .fourth-text{
+        font-size: 23px;
+        width: 50%;
+    }
+}
+@media(max-width:500px){
+    .fourth-text{
+        margin-right: 30px;
+        width: 60%;
+        font-size: 20px;
+    }
+}
+@media(max-width:440px){
+    .fourth-text{
+        margin-right: 10px;
+        width: 55%;
+        font-size:18px;
+    }
+}
+/* fourth section ends here */
+
+/* fifth section starts here */
+@media(max-width:650px){
+    .fifth .containers img{
+        width: 90%;
+    }
+    .fifth h1{
+        width: 90%;
+        font-size: 30px;
+    }
+}
+/* fifth section ends here */
+
+/* about us starts here */
+@media(max-width:1280px){
+    .about-text{
+        font-size: 20px;
+    }
+}
+@media(max-width:1040px){
+    .about-text{
+        padding: 20px;
+        font-size: 18px;
+    }
+}
+@media(max-width:770px){
+    .about-text{
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+@media(max-width:530px){
+    .about{
+        flex-direction: column;
+    }
+    .about-image{
+        width: 95%;
+        margin-left: 10px;
+    }
+    .about-text{
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media(max-width:325px){
+    .about-text{
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+/* about us ends here */
+
+
+
+/* footer section starts here */
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+}
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+}
+/* footer section ends here */
